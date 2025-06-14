@@ -1,0 +1,41 @@
+.audio-player-input 
+{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lawngreen;
+}
+
+.audio-player-input > * 
+{
+    flex:1;
+}
+
+.audio-btn,
+input::file-selector-button
+{
+    border-radius: 0px;
+    color: black;
+    background-color: lawngreen;
+    border: 1px solid lawngreen;
+    padding: 5px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.audio-btn:hover,
+.audio-btn:active,
+input::file-selector-button:hover,
+input::file-selector-button:active
+{
+    background-color: black;
+    border: 1px solid lawngreen;
+    color: lawngreen;
+
+}
+
+#myCanvas
+{
+    width: 1000px;
+    height: 400px;
+    object-fit: contain;
+}

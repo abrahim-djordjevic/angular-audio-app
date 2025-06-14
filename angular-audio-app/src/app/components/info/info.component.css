@@ -1,0 +1,17 @@
+.info-title
+{
+    padding-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid lawngreen;
+    text-align: center;
+}
+
+.info-body
+{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    border: 1px solid lawngreen;
+    text-align: center;
+}

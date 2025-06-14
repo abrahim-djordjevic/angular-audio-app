@@ -1,0 +1,12 @@
+<div class="audio-player-container">
+    <div class="audio-player-input">
+        <input type="file" (change)="onFileSelected($event)" acept=".mp3" />
+        <button 
+            class="audio-btn"
+            (click)="playAudio()"
+        >
+            {{isPlaying ? 'Stop Playing' : 'Play Audio'}}
+        </button>
+    </div>
+    <canvas id="myCanvas"></canvas>
+</div>

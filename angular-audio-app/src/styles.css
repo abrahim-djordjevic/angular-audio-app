@@ -5,3 +5,29 @@ body
     color: lawngreen;
     font-family: monospace;
 }
+
+.app-body 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.info-container 
+{
+    min-width: 20vw;
+}
+
+.audio-player-container
+{
+    min-width: 60vw;
+}
+
+.info-container,
+.audio-player-container 
+{
+    border: 1px solid lawngreen;
+    padding: 20px;
+    min-height: 50vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
