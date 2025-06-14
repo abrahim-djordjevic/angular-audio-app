@@ -83,23 +83,23 @@ export class AudioPlayerComponent implements OnInit {
 
         const canvas = <HTMLCanvasElement> document.getElementById('myCanvas');
         const context = canvas.getContext("2d");
+        canvas.width =  window.innerWidth;
+        canvas.height =  window.innerHeight / 2;
         canvas.style.background = "black";
-        canvas.width = 1000;
-        canvas.height = 400;
                
         if(context === null) return;
         context.strokeStyle = "lawngreen";
 
         context.beginPath();
         
-        const margin = 1000 / bufferLength;
-        let x = 20;
+        const margin = window.innerWidth / bufferLength;
+        let x = 100;
         for (let i = 0; i < bufferLength;++i){
             // normalize the frequency data to fit our canvas
             let y = canvas.height - (dataArray[i] / 255 * (canvas.height / 2));
             
             if (i == 0){
-                context.moveTo(x,window.innerHeight/4)
+                context.moveTo(x, window.innerWidth / 4)
             }else{
                 context.lineTo(x,y);
             }

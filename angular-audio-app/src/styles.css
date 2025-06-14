@@ -19,7 +19,7 @@ body
 
 .audio-player-container
 {
-    min-width: 60vw;
+    max-width: 60vw;
 }
 
 .info-container,
@@ -27,7 +27,7 @@ body
 {
     border: 1px solid lawngreen;
     padding: 20px;
-    min-height: 50vh;
+    height: 60vh;
     margin-left: 10px;
     margin-right: 10px;
 }
